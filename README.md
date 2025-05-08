@@ -22,8 +22,8 @@ The primary dataset for the project has been taken from kaggle [link](https://ww
 - Jupyter Notebook
 - ReactJS
 
-# Installation and Configuration 
-Visit my project [Exploring-BI-Tools](https://github.com/Radiohead229/Exploring-BI-Tools?tab=readme-ov-file#1-installing-superset-using-docker-compose) for understanding setup guides on Docker Desktop installation process.
+# Installation and Configuration
+Visit my project [Exploring-BI-Tools](https://github.com/Radiohead229/Exploring-BI-Tools?tab=readme-ov-file#1-installing-superset-using-docker-compose) for understanding setup guides on **Docker Desktop** installation process.
 
 
 
