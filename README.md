@@ -2,7 +2,7 @@
 A Deep Learning Project on Potato Disease Classification using CNN and MLOPS (tf serving).
 
 ## Problem Statement
-Farmers who grow potato are facing a lot of economical losses every year due to various diseases that can happen to a potato plant. There are two common diseases known as Early Blight and Late Blight. These are two common and serious fungal diseases affecting potatoes, and are caused by different pathogens and have distinct characteristics. now if a farmer detects these early and apply appropriate treatment then it can save a lot of waste and prevent economical loss. The treatments for early blight and late blight are little different, so it is important to accurately identify them .
+Farmers who grow potato are facing a lot of economical losses every year due to various diseases that can happen to a potato plant. There are two common diseases known as Early Blight and Late Blight. These are two serious fungal diseases affecting potatoes, and are caused by different pathogens and have distinct characteristics. Now if a farmer detects this early and apply appropriate treatment then it can save a lot of waste and prevent economical loss. The treatments for early blight and late blight are little different, so it is important to accurately identify them.
 
 # End-to-End Project Idea
 - Building a deep learning model using CNN, tensorflow, data augumentation and tf dataset.
