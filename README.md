@@ -29,8 +29,10 @@ The primary dataset for the project has been taken from kaggle [link](https://ww
 # Installation and Configuration
 >[!Note]
 >**Hosted on Windows 11, 64 bit operating System, x64 based processor & WSL enabled, using Docker Desktop.**
+
 ## Setup for Python
 Step 1: Downlaod and Intsall Python from [here](https://www.python.org)
+
 Step 2:Install the required python packages mentioned in the **"requirement.txt"** file. 
 
 Visit my project [Exploring-BI-Tools](https://github.com/Radiohead229/Exploring-BI-Tools?tab=readme-ov-file#1-installing-superset-using-docker-compose) for understanding setup guides on **Docker Desktop** installation process.[Till Step 5]
