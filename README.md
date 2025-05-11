@@ -28,7 +28,7 @@ The primary dataset for the project has been taken from kaggle [link](https://ww
 
 # Installation and Configuration
 >[!Note]
->**Hosted on Windows 11, 64 bit operating System, x64 based processor & WSL enabled, using Docker Desktop.**
+>**The system is hosted on Windows 11 (64-bit) with an x64-based processor, Webpack 4, WSL enabled, and Docker Desktop installed.**
 
 ## Setup for Python and Jupyter Notebook
 Step 1: Downlaod and Intsall Python from [here](https://www.python.org)
