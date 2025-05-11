@@ -41,7 +41,7 @@ Step 3: Install Jupyter Notebook via Gitbash [git setup guides](https://git-scm.
 python --version
 pip --version
 ```
-This checks if python is installed in the system. You should see version numbers. If not, restart your terminal or reinstall Python with the PATH option checked.
+This checks if python is installed in the system. Shows version numbers. If it does not, restart terminal or reinstall Python with the PATH option checked.
 
 ```
 pip install notebook
@@ -51,7 +51,25 @@ Wait for it to complete. This installs the classic Jupyter Notebook interface.
 ```
 python -m notebook
 ```
-This will start a local server in your default web browser. `http://localhost:8888/tree`
+This will start a local server in default web browser. `http://localhost:8888/tree`.
+
+
+## Setup for ReactJS
+Step 1: Download and Install Nodejs from [here](https://nodejs.org/en/download)
+
+Step 2: Install NPM (Setup instructions)
+
+Step 3: Install dependencies
+
+`cd frontend`
+changes the directory to frontend
+
+`npm install --from-lock-json`
+pulls all javascript modules that are required for the project
+
+`npm audit fix`
+Automatically finds and fixes known security vulnerabilities in project's dependencies.
+
 
 Visit my project [Exploring-BI-Tools](https://github.com/Radiohead229/Exploring-BI-Tools?tab=readme-ov-file#1-installing-superset-using-docker-compose) for understanding setup guides on **Docker Desktop** installation process.[Till Step 5]
 
