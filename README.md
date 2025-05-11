@@ -59,7 +59,7 @@ Step 1: Download and Install Nodejs from [here](https://nodejs.org/en/download)
 
 Step 2: Install NPM (Setup instructions)
 
-Step 3: Install dependencies
+Step 3: Run the codes below to install the necessary dependencies
 
 `cd frontend`
 
