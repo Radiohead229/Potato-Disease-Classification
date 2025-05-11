@@ -30,12 +30,13 @@ The primary dataset for the project has been taken from kaggle [link](https://ww
 >[!Note]
 >**Hosted on Windows 11, 64 bit operating System, x64 based processor & WSL enabled, using Docker Desktop.**
 
-## Setup for Python
+## Setup for Python and Jupyter Notebook
 Step 1: Downlaod and Intsall Python from [here](https://www.python.org)
 
 Step 2: Install the required python packages mentioned in the **"requirement.txt"** file.
 
-Step 3: Install Jupyter Notebook via Gitbash [setup guides](https://git-scm.com/download/win) and run the codes
+Step 3: Install Jupyter Notebook via Gitbash [git setup guides](https://git-scm.com/download/win) and run the codes
+
 ```
 python --version
 pip --version
