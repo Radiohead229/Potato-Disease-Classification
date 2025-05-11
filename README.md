@@ -33,7 +33,24 @@ The primary dataset for the project has been taken from kaggle [link](https://ww
 ## Setup for Python
 Step 1: Downlaod and Intsall Python from [here](https://www.python.org)
 
-Step 2:Install the required python packages mentioned in the **"requirement.txt"** file. 
+Step 2: Install the required python packages mentioned in the **"requirement.txt"** file.
+
+Step 3: Install Jupyter Notebook via Gitbash [setup guides](https://git-scm.com/download/win) and run the codes
+```
+python --version
+pip --version
+```
+This checks if python is installed in the system. You should see version numbers. If not, restart your terminal or reinstall Python with the PATH option checked.
+
+```
+pip install notebook
+```
+Wait for it to complete. This installs the classic Jupyter Notebook interface.
+
+```
+python -m notebook
+```
+This will start a local server in your default web browser. `http://localhost:8888/tree`
 
 Visit my project [Exploring-BI-Tools](https://github.com/Radiohead229/Exploring-BI-Tools?tab=readme-ov-file#1-installing-superset-using-docker-compose) for understanding setup guides on **Docker Desktop** installation process.[Till Step 5]
 
