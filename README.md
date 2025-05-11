@@ -62,12 +62,15 @@ Step 2: Install NPM (Setup instructions)
 Step 3: Install dependencies
 
 `cd frontend`
+
 changes the directory to frontend
 
 `npm install --from-lock-json`
+
 pulls all javascript modules that are required for the project
 
 `npm audit fix`
+
 Automatically finds and fixes known security vulnerabilities in project's dependencies.
 
 
