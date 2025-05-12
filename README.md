@@ -62,16 +62,13 @@ Step 2: Install NPM (Setup instructions)
 Step 3: Run the codes below to install the necessary dependencies
 
 `cd frontend`
-
 changes the directory to frontend
 
 `npm install --from-lock-json`
-
 pulls all javascript modules that are required for the project
 
 `npm audit fix`
-
-Automatically finds and fixes known security vulnerabilities in project's dependencies.
+automatically finds and fixes known security vulnerabilities in project's dependencies.
 
 ## Setup for Docker Desktop
 
