@@ -61,13 +61,19 @@ Step 2: Install NPM (Setup instructions)
 
 Step 3: Run the codes in your terminal to install the necessary dependencies
 
-`cd frontend`
+```
+cd frontend
+```
 changes the directory to frontend
 
-`npm install --from-lock-json`
+```
+npm install --from-lock-json
+```
 pulls all javascript modules that are required for the project
 
-`npm audit fix`
+```
+npm audit fix
+```
 automatically finds and fixes known security vulnerabilities in project's dependencies.
 
 ## Setup for Docker Desktop
@@ -75,7 +81,28 @@ automatically finds and fixes known security vulnerabilities in project's depend
 Visit my project [Exploring-BI-Tools](https://github.com/Radiohead229/Exploring-BI-Tools?tab=readme-ov-file#1-installing-superset-using-docker-compose) for understanding setup guides on **Docker Desktop** installation process.[Till Step 5]
 
 ### Configuration of FastAPI and TF serving on Docker Compose
+Step 1: After installing Docker, get a docker image of Tf serving. You can either pull the image from docker desktop application from the *Search bar option* or through terminal command 
+```
+docker pull tensoflow/serving
+```
 
+Step 2: Create the *base path* by mapping the host directory of the project from computer to some directory (name it yourslef) inside the docker container
+
+```
+docker run -it -v C:\code\potato:/potato -p 8501:8501 --entrypoint bin/bash tensorflow/serving
+```
+
+>[!IMPORTANT]
+>Here `C:\code\potato` is my host directory and `/potato` is the directory i'm creating inside my docker container.
+
+Step 3: Now run the tf  server and test your prediction model(s) using docker
+
+```
+docker run -it --rm -p 8501:8501 -v C:\code\potato:/potato tensorflow/serving --rest_api_port=8501 --model_config_file=/potato/models.config
+
+```
+>[!IMPORTANT]
+>Make sure your **models.config** file should have the correct file path of the docker container.
 
 
 
