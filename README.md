@@ -80,7 +80,9 @@ automatically finds and fixes known security vulnerabilities in project's depend
 
 Visit my project [Exploring-BI-Tools](https://github.com/Radiohead229/Exploring-BI-Tools?tab=readme-ov-file#1-installing-superset-using-docker-compose) for understanding setup guides on **Docker Desktop** installation process.[Till Step 5]
 
-### Configuration of FastAPI and TF serving on Docker Compose
+
+## Backend Configuration 
+#### FastAPI and TF serving on Docker Compose
 Step 1: After installing Docker, get a docker image of Tf serving. You can either pull the image from docker desktop application from the *Search bar option* or through terminal command 
 ```
 docker pull tensoflow/serving
@@ -103,6 +105,11 @@ docker run -it --rm -p 8501:8501 -v C:\code\potato:/potato tensorflow/serving --
 ```
 >[!IMPORTANT]
 >Make sure your **models.config** file should have the correct file path of the docker container.
+
+
+## Frontend Configuration
+
+
 
 
 
