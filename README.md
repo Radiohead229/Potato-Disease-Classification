@@ -104,7 +104,7 @@ docker run -it --rm -p 8501:8501 -v C:\code\potato:/potato tensorflow/serving --
 
 ```
 >[!IMPORTANT]
->Make sure your **models.config** file should have the correct file path of the docker container.
+>Make sure your **models.config** file has the correct file path of the **docker container**.
 
 
 ## Frontend Configuration
