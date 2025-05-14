@@ -9,11 +9,9 @@ Farmers who grow potato are facing a lot of economical losses every year due to 
   
 - Exploring  tf serving and **FastAPI** for backend server and MLOPS.
   
-- Model Optimization through **quantization and tensorflow lite**.
+- Model Optimization through **quantization**.
   
 - Using **React JS** and **React Native** for Frontend.
-  
-- Deploying the model on Google Cloud Platform using Google Cloud Functions to handle inference requests.
 
 # Data Source Used
 The primary dataset for the project has been taken from kaggle [link](https://www.kaggle.com/datasets/arjuntejaswi/plant-village).
