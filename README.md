@@ -123,6 +123,10 @@ npm run start
 >Check if network address of `.env file` is located at **loaclhost** and not at port 0.0.0 in case of any runtime error.
 
 
+## Description
+This project mainly focuses on the model training by CNN and exploration of api tf serving on docker desktop, a little exploration of reactjs and a slight understanding of web dev.
+
+>[!IMPOTANT]
 
 
 
