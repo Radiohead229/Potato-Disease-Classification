@@ -76,6 +76,8 @@ npm audit fix
 ```
 automatically finds and fixes known security vulnerabilities in project's dependencies.
 
+Step 4: Copy the file `env.example` and save as `.env` file in the src folder.
+
 ## Setup for Docker Desktop
 
 Visit my project [Exploring-BI-Tools](https://github.com/Radiohead229/Exploring-BI-Tools?tab=readme-ov-file#1-installing-superset-using-docker-compose) for understanding setup guides on **Docker Desktop** installation process.[Till Step 5]
@@ -108,6 +110,15 @@ docker run -it --rm -p 8501:8501 -v C:\code\potato:/potato tensorflow/serving --
 
 
 ## Frontend Configuration
+Inside you frontend directory run the code 
+
+```
+npm run start
+```
+
+>[!CAUTION]
+>Make sure your python system has CORS (cross origin resource sharing) interpreter. It is impirtnt because the frontend server is working on the port 3000 while the backend server runs at 8000.
+
 
 
 
