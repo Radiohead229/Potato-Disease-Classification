@@ -110,19 +110,14 @@ docker run -it --rm -p 8501:8501 -v C:\code\potato:/potato tensorflow/serving --
 
 
 ## Frontend Configuration
-Inside you frontend directory run the code 
+In gitbash inside you frontend directory run the code 
 
 ```
 npm run start
 ```
 
 >[!CAUTION]
->Make sure your python system has CORS (cross origin resource sharing) interpreter. It is impirtnt because the frontend server is working on the port 3000 while the backend server runs at 8000.
-
-
-
-
-
+>Make sure your python system has **CORS** (cross origin resource sharing) interpreter. It is important because the frontend server is working on the port 3000 while the backend server runs at 8000.and CORS allows cross port requests.
 
 
 
