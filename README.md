@@ -124,10 +124,10 @@ npm run start
 
 
 ## Description
-This project mainly focuses on the model training by CNN and exploration of api tf serving on docker desktop, a little exploration of reactjs and a slight understanding of web dev.
+This project mainly focuses on the model training by CNN algorithm, exploration of api with tf serving, a little exploration of docker desktop and a slight understanding of web dev.
 
 >[!IMPOTANT]
-
+>Folders **model.keras** and **saved_models** are created to serve different purposes in the project.
 
 
 
