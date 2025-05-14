@@ -7,7 +7,7 @@ Farmers who grow potato are facing a lot of economical losses every year due to 
 # End-to-End Project Idea
 - Building a deep learning model using **CNN, tensorflow, data augumentation and tf dataset**.
   
-- Exploring  tf serving and **FastAPI** for backend server and MLOPS.
+- Exploring  **TF serving** and **FastAPI** for backend server and MLOPS.
   
 - Model Optimization through **quantization**.
   
@@ -122,7 +122,7 @@ npm run start
 
 
 # Description
-This project mainly focuses on the model training by CNN algorithm, exploration of api with tf serving, a little exploration of docker desktop and a slight understanding of web dev.
+This Project mainly focuses on the model training by CNN algorithm, exploration of api with tf serving, a little exploration of docker desktop and a slight understanding of web dev.
 
 >[!IMPORTANT]
 >Folders **model.keras** and **saved_models** are created to serve different purposes in the project.
