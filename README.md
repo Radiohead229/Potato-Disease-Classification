@@ -117,7 +117,10 @@ npm run start
 ```
 
 >[!CAUTION]
->Make sure your python system has **CORS** (cross origin resource sharing) interpreter. It is important because the frontend server is working on the port 3000 while the backend server runs at 8000.and CORS allows cross port requests.
+>Make sure your python system has **CORS** (cross origin resource sharing) interpreter. It is important because the frontend server is working on the port 3000 while the backend server runs at 8000. CORS allows cross port requests.
+
+>[!NOTE]
+>Check if network address of `.env file` is located at **loaclhost** and not at port 0.0.0 in case of any runtime error.
 
 
 
