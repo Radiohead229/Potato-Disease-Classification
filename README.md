@@ -11,7 +11,7 @@ Farmers who grow potato are facing a lot of economical losses every year due to 
   
 - Model Optimization through **quantization**.
   
-- Using **React JS** and **React Native** for Frontend.
+- Using **React JS** for Frontend.
 
 # Data Source Used
 The primary dataset for the project has been taken from kaggle [link](https://www.kaggle.com/datasets/arjuntejaswi/plant-village).
