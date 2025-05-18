@@ -94,8 +94,7 @@ Step 2: Create the *base path* by mapping the host directory of the project from
 docker run -it -v C:\code\potato:/potato -p 8501:8501 --entrypoint bin/bash tensorflow/serving
 ```
 
->[!IMPORTANT]
->Here `C:\code\potato` is my host directory and `/potato` is the directory i'm creating inside my docker container.
+Here `C:\code\potato` is my host directory and `/potato` is the directory i'm creating inside my docker container.
 
 Step 3: Now run the tf  server and test your prediction model(s) using docker
 
@@ -103,8 +102,7 @@ Step 3: Now run the tf  server and test your prediction model(s) using docker
 docker run -it --rm -p 8501:8501 -v C:\code\potato:/potato tensorflow/serving --rest_api_port=8501 --model_config_file=/potato/models.config
 
 ```
->[!IMPORTANT]
->Make sure your **models.config** file has the correct file path of the **docker container**.
+Make sure your **models.config** file has the correct file path of the **docker container**.
 
 
 ## Frontend Configuration
@@ -115,24 +113,27 @@ npm run start
 ```
 
 >[!CAUTION]
->Make sure your python system has **CORS** (cross origin resource sharing) interpreter. It is important because the frontend server is working on the port 3000 while the backend server runs at 8000. CORS allows cross port requests.
-> Also if the system shows *digital envelope routines::unsupported* error it is because of compatibility issue between Node.js 17+ and Webpack 4 (used by react-scripts), due to OpenSSL 3 in Node.js, therefore to fix the error type in the following code in bash "export NODE_OPTIONS=--openssl-legacy-provider and then run start again .
-"
+>Make sure your python system has **CORS** (cross origin resource sharing) interpreter. It is important because the frontend server is working on the port 3000 while the backend server runs at 8000. CORS allows cross port requests. Also in the gitbash if it shows `digital envelope routines::unsupported` error it is because of compatibility issue between Node.js 17+ and Webpack 4 (used by react-scripts), due to OpenSSL 3 in Node.js, therefore to fix the error type in the code in bash `export NODE_OPTIONS=--openssl-legacy-provider` and then run start again.
 
 >[!NOTE]
->Check if network address of `.env file` is located at **loaclhost** and not at port 0.0.0 in case of any runtime error.
+>Check if network address of `.env file` is located at **localhost** and not at port 0.0.0 in case of any runtime error.
 
 
 # Description
 This Project primarily focuses on model training by CNN algorithm, exploration of api with tf serving, a little exploration of docker desktop and a slight understanding of web dev(html,css, js).
 
->[!IMPORTANT]
+In newer versions of TensorFlow and Keras (specifically Keras 3), models are no longer saved in a single format that combines both the **.keras** file with the assets, variables, and saved_model.pb. Therefore, two separate saving functions are used. One for saving in **.keras** format using **model.save()** and the other for exporting a full TensorFlow **SavedModel** directory using **model.export()**. However, to reduce this, I've written a code were you can save both formats in one single call and can create a custom function that saves both the **.keras** file and the **model** directory, effectively giving you both outputs. visit my [gist](https://gist.github.com/Radiohead229/8a373c88b514e01fdc0b25bebdb1a0d4) to check out the code.
 
->In newer versions of TensorFlow and Keras (specifically Keras 3), models are no longer saved in a single format that combines both the *.keras* file and the full *SavedModel* directory (which includes assets/, variables/, and saved_model.pb). Therefore, two separate saving functions are used:
-
-One for saving in *.keras* format using *model.save()*
-One for exporting a full TensorFlow *SavedModel* directory using *model.export()*
-
+A sample overview of the directory
+```
+/saved_models/
+    /1/
+        1.keras              # Keras model file
+        model/               # TensorFlow saved model folder
+            saved_model.pb    # The protobuf model file
+            variables/        # The model's variables
+            assets/            # Any associated assests
+```
 
 
 
