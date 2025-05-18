@@ -116,16 +116,23 @@ npm run start
 
 >[!CAUTION]
 >Make sure your python system has **CORS** (cross origin resource sharing) interpreter. It is important because the frontend server is working on the port 3000 while the backend server runs at 8000. CORS allows cross port requests.
+> Also if the system shows *digital envelope routines::unsupported* error it is because of compatibility issue between Node.js 17+ and Webpack 4 (used by react-scripts), due to OpenSSL 3 in Node.js, therefore to fix the error type in the following code in bash "export NODE_OPTIONS=--openssl-legacy-provider and then run start again .
+"
 
 >[!NOTE]
 >Check if network address of `.env file` is located at **loaclhost** and not at port 0.0.0 in case of any runtime error.
 
 
 # Description
-This Project mainly focuses on the model training by CNN algorithm, exploration of api with tf serving, a little exploration of docker desktop and a slight understanding of web dev.
+This Project primarily focuses on model training by CNN algorithm, exploration of api with tf serving, a little exploration of docker desktop and a slight understanding of web dev(html,css, js).
 
 >[!IMPORTANT]
 >Folders **model.keras** and **saved_models** are created to serve different purposes in the project.
+>In newer versions of TensorFlow and Keras (specifically Keras 3), models are no longer saved in a single format that combines both the *.keras* file and the full *SavedModel* directory (which includes assets/, variables/, and saved_model.pb). Therefore, two separate saving functions are used:
+
+One for saving in *.keras* format using *model.save()*
+
+One for exporting a full TensorFlow *SavedModel* directory using *model.export()*
 
 
 
