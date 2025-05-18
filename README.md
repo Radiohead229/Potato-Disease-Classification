@@ -128,6 +128,7 @@ This Project primarily focuses on model training by CNN algorithm, exploration o
 
 >[!IMPORTANT]
 >Folders **model.keras** and **saved_models** are created to serve different purposes in the project.
+
 >In newer versions of TensorFlow and Keras (specifically Keras 3), models are no longer saved in a single format that combines both the *.keras* file and the full *SavedModel* directory (which includes assets/, variables/, and saved_model.pb). Therefore, two separate saving functions are used:
 
 One for saving in *.keras* format using *model.save()*
