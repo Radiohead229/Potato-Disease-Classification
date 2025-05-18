@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL = tf.keras.models.load_model("../model.keras/1.keras")
+MODEL = tf.keras.models.load_model("../saved_models/5/5.keras")
 
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
